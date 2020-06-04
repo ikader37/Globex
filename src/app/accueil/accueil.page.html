@@ -1,0 +1,287 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-row>
+      <ion-col size="11">
+        <ion-searchbar></ion-searchbar>
+      </ion-col>
+
+      <ion-col size="1">
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-col>
+    </ion-row>
+  
+  </ion-toolbar>
+  
+</ion-header>
+
+<style>
+
+ion-tab-button{
+  color: white;
+  font-weight: bold;
+}
+a{
+  text-decoration: none;color: black;
+  font-weight: bold;
+}
+
+ion-img{
+  width: 150px; height:140px;
+}
+</style>
+
+<ion-content>
+
+
+<ion-tabs color="primary">
+  <ion-tab-bar slot="top" color="primary"> 
+    <ion-tab-button tab="Scanner">
+      <ion-icon name="scan-outline"></ion-icon>
+      <ion-label>Scanner</ion-label>
+    </ion-tab-button>
+
+
+
+
+    <ion-tab-button tab="qrcode">
+      <ion-icon name="qr-code-outline"></ion-icon>
+      <ion-label>QR Code</ion-label>
+    </ion-tab-button>
+
+
+
+
+    <ion-tab-button tab="portefeuille">
+      <ion-icon name="wallet-outline"></ion-icon>
+     <ion-label>Portefeuille</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="collecter">
+      <ion-icon name="cash-outline"></ion-icon>
+       <ion-label>Collecter</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+
+
+
+  <ion-tab-bar slot="bottom" color="primary">
+    <ion-tab-button tab="Accueil">
+      <ion-icon src="assets/svg/globex.svg"></ion-icon>
+      <ion-label>Accueil</ion-label>
+      
+
+
+    </ion-tab-button>
+
+    <ion-tab-button tab="Chat">
+      <ion-icon name="chatbubbles-outline"></ion-icon>
+      <ion-label>Chat</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="Chat">
+      <ion-icon name="wallet-outline"></ion-icon>
+      <ion-label>Portefeuille</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="Moi">
+      <ion-icon name="person-outline"></ion-icon>
+      <ion-label>Moi</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
+<div class="container" style="margin-top: 10px;">
+
+
+<ion-row>
+  <ion-col size="4">
+
+    <a href="#">
+      <ion-row>
+        <ion-col size="12">
+          <ion-img src="assets/img/vol.jpg" ></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <span>Ticket Avion Bus</span>
+        </ion-col>
+      </ion-row>
+    
+    
+    </a>
+    
+  </ion-col>
+
+  <ion-col size="4" >
+    <a href="#">
+
+      <ion-row>
+        <ion-col size="12">
+          <ion-img src="assets/img/courses.jpg" ></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <span  style="text-decoration: none;" >Vos courses</span>
+        </ion-col>
+      </ion-row>
+
+    </a>
+    
+  </ion-col>
+
+  <ion-col size="4">
+
+
+    <a href="#">
+    
+      <ion-row>
+        <ion-col size="12">
+          <ion-img src="assets/img/bouti.jpg" ></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <span>Super marches</span>
+        </ion-col>
+      </ion-row>
+    
+    </a>
+    
+  </ion-col>
+
+</ion-row>
+
+
+<ion-row>
+  <ion-col size="4">
+
+    <a  href="#">
+      <ion-row>
+        <ion-col size="12">
+          <ion-img src="assets/img/docto.jpg" ></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <span>Mon docteur</span>
+        </ion-col>
+      </ion-row>
+    
+    </a>
+   
+  </ion-col>
+
+  <ion-col size="4">
+
+    <a href="#">
+      <ion-row>
+        <ion-col size="12">
+          <ion-img src="assets/img/repar.jpg"></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <span>Mon reparateur</span>
+        </ion-col>
+      </ion-row>
+    
+    </a>
+    
+  </ion-col>
+
+  <ion-col size="4">
+
+    <a  href="#">
+    
+      <ion-row>
+        <ion-col size="12">
+          <ion-img src="assets/img/bouti.jpg" ></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <span>Vous achetez</span>
+        </ion-col>
+      </ion-row>
+    </a>
+    
+  </ion-col>
+
+</ion-row>
+
+
+
+<ion-row>
+  <ion-col size="4">
+
+    <a  href="#">
+    
+      <ion-row>
+        <ion-col size="12">
+          <ion-img src="assets/img/game.jpg"></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <span>Jeux en ligne</span>
+        </ion-col>
+      </ion-row>
+    </a>
+   
+  </ion-col>
+
+
+  <ion-col size="4">
+
+    <a  href="#">
+    
+      <ion-row>
+        <ion-col size="12">
+          <ion-img src="assets/img/teach.jpg" ></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <span>Formations</span>
+        </ion-col>
+      </ion-row>
+    </a>
+
+   
+  </ion-col>
+
+
+  <ion-col size="4">
+    <a href="#">
+      <ion-row>
+        <ion-col size="12">
+          <ion-img src="assets/img/taxi.jpg" ></ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <span>Mon taxi</span>
+        </ion-col>
+      </ion-row>
+    
+    
+    </a>
+
+
+    
+  </ion-col>
+
+ 
+
+ 
+
+</ion-row>
+<ion-row style="background-color: darkolivegreen;">
+  <ion-col size=12>
+    <h1>Espace publicitaire</h1>
+  </ion-col>
+
+</ion-row>
+</div>
+</ion-content>

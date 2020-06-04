@@ -1,0 +1,8 @@
+{
+  "appId": "com.globex.app",
+  "appName": "globex",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}

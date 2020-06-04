@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="container" >
+  <div style="background-image: url('../../assets/img/background.jpg');"> 
+
+
+    <form >
+
+      <ion-row>
+        <ion-col size=12>
+          <ion-img src="assets/img/globex.jpg" alt="Image de globex">
+    
+          </ion-img>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+    
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="2">
+          <ion-icon name="phone-portrait-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="2">
+          <ion-input type="text" value="+227" placeholder="+227" name="ind" [(ngModel)]="ind"></ion-input>
+        </ion-col>
+        <ion-col size="8">
+          <ion-item>
+            <ion-label position="floating">Numero de telephone</ion-label>
+            <ion-input type="tel" [(ngModel)]="tel" name="tel"></ion-input>
+          </ion-item>
+    
+         
+          
+        </ion-col>
+      </ion-row>
+    
+    
+      <ion-row>
+        <ion-col size="2">
+          <ion-icon name="lock-closed-outline"></ion-icon>
+    
+        </ion-col>
+        <ion-col offset="2" size="8">
+    
+    
+          <ion-row>
+            <ion-col size=10>
+              <ion-item>
+                <ion-label position="floating">Mot de passe</ion-label>
+                <ion-input type="{{password_type}}" [(ngModel)]="password" name="password"></ion-input>
+              </ion-item>
+            </ion-col>
+            <ion-col size=2 >
+              <ion-icon style="height: 100%;" (click)="visiblePass()" name="{{oeil}}"></ion-icon>
+            </ion-col>
+          </ion-row>
+    
+    
+          
+        </ion-col>
+      </ion-row>
+        
+      <ion-row>
+        <ion-col size="12">
+          <ion-button (click)="login()"><ion-icon name="lock-open-outline"></ion-icon>Se connecter</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size="12">
+          <ion-button href="create-account" color="dark"><ion-icon name="person-add-outline"></ion-icon>Nouveau?Creer un compte</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        
+      </ion-row>
+    
+    </form>
+
+
+
+  </div>
+
+
+</ion-content>

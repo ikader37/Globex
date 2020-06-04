@@ -1,0 +1,98 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Creer un compte</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding >
+
+<form [formGroup]="createUserForm" (submit)="createUser()" style="background-image: url('../../assets/img/background.jpg');">
+  <ion-row>
+    <ion-col size=12>
+      <ion-img src="assets/img/globex.jpg" alt="Image de globex">
+
+      </ion-img>
+    </ion-col>
+  </ion-row>
+  
+  <ion-row *ngIf="error" color="danger" > 
+    <ion-col size="12">
+      <span>
+        Une erreur est survenue!!Veuillez verifier votre connexion internet svp!!.
+      </span>
+    </ion-col>
+
+  </ion-row>
+  
+  <ion-row>
+    <ion-col size="2">
+      <ion-icon name="person-outline"></ion-icon>
+    </ion-col>
+    <ion-col offset="2" size="8">
+      <ion-item>
+        <ion-label position="floating">Nom</ion-label>
+        <ion-input type="text" formControlName="nom"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="2">
+      <ion-icon name="person-outline"></ion-icon>
+    </ion-col>
+    <ion-col offset="2" size="8">
+      <ion-item>
+        <ion-label position="floating">Prenom(s)</ion-label>
+        <ion-input type="text" formControlName="prenom"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+
+  <ion-row>
+    <ion-col size="2">
+      <ion-icon name="phone-portrait-outline"></ion-icon>
+    </ion-col>
+    <ion-col size="2">
+      <ion-input type="text" placeholder="+227" formControlName="ind"></ion-input>
+    </ion-col>
+    <ion-col size="8">
+      
+      <ion-item>
+        <ion-label position="floating">Numero de telephone</ion-label>
+        <ion-input type="tel" formControlName="tel"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col size="2">
+      <ion-icon name="lock-closed-outline"></ion-icon>
+
+    </ion-col>
+    <ion-col offset="2" size="8">
+      <ion-item>
+        <ion-label position="floating">Mot de passe</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+    
+  <ion-row>
+    <ion-col size="12">
+      <ion-button type="submit" color="success" expand="block" [disabled]="!createUserForm.valid"><ion-icon name="person-add-outline"></ion-icon>S'enregistrer</ion-button>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col size="12">
+      <ion-button type="button" href="login" color="dark" expand="block" ><ion-icon name="lock-open-outline"></ion-icon>Se connecter</ion-button>
+    </ion-col>
+  </ion-row>
+
+</form>
+ 
+  
+</ion-content>
